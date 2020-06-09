@@ -1,0 +1,12 @@
+<view hidden="{{flag}}" >
+<!-- flag="{{flag}}" -->
+
+  <loginBar class="loginbar">
+
+  
+     <view slot="loginSlot">
+     <button class="btn" bindgetuserinfo="onGetUserInfo" open-type="getUserInfo" >Login</button>
+  </view>
+</loginBar>
+</view>
+

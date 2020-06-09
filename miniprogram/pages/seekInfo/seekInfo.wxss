@@ -1,0 +1,118 @@
+.ADContainer{
+  width: 100%;
+  background-color: #efefef;
+}
+
+.ADcontent{
+  width: 100%;
+  /* padding: 5px; */
+ box-sizing: border-box;
+  color: #333;
+  background-color: #fff;
+}
+.ADcontent view{
+  width: 100%;
+  box-sizing: border-box;
+  /* margin-bottom: 20rpx;
+  margin-top: 40rpx;
+  */
+}
+
+.ADimg{
+  width: 100%;
+}
+
+.ADtitle{
+  font-size: 16px;
+  line-height: 60px;
+  font-weight: 700;
+  font-stretch:condensed ;
+  color: #5FA503;
+}
+.concat{
+font-size: 20px;
+font-weight: 700;
+text-align: center;
+width: 100%;
+line-height: 50px;
+background-color: #FDA705;
+color: #333;
+border-radius: 60rpx;
+letter-spacing: 2rpx;
+
+}
+.adoptAsk{
+  margin:10px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5FA503;
+  /* box-shadow: 0px 0px 4px 4px #efefef; */
+}
+.askDetail{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+.askDetail view{
+  width:50%;
+  text-align: center;
+  font-size: 14px;
+letter-spacing: 2rpx;
+font-weight: 500;
+line-height: 25px;
+color: #333;
+
+}
+.ADdetail{
+
+  width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+border-right: 1rpx solid #efefef;
+border-bottom: 1rpx solid #efefef;
+margin-top: 40rpx;
+
+}
+.ADdetail text{
+width: 50%;
+border-top: 1rpx solid #efefef;
+height: 80rpx;
+vertical-align: middel;
+border-left: 1rpx solid #efefef;
+line-height: 80rpx;
+box-sizing: border-box;
+padding-left: 16rpx;
+letter-spacing: 3rpx;
+
+}
+.ADdetail text:nth-child(2n+1){
+  font-weight: bold
+}
+.adStory{
+font-size: 16px;
+letter-spacing: 2rpx;
+font-weight: bolder;
+line-height: 27px;
+color: #5fa503;
+
+}
+.adStory text{
+ font-size: 14px;
+letter-spacing: 2rpx;
+font-weight: 500;
+text-indent: 28px;
+line-height: 25px;
+color: #333;
+}
+.leftcon{
+  width: 5px;
+  height: 18px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align:text-bottom ;
+  background-color: #5fa503
+}

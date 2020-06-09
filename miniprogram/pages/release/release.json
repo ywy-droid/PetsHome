@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "loginBottom": "../../components/loginBottom/loginBottom"
+   
+  },
+  "navigationBarTitleText": "发布",
+  "navigationBarTextStyle": "white"
+}

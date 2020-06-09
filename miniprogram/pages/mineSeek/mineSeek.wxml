@@ -1,0 +1,17 @@
+<!-- 我发布的送养 -->
+<view>
+  <image class="mineAdoptbg" src="../../images/cat2.png"></image>
+  <view class="mineItem" wx:for="{{seeklist}}" wx:for-item="item" wx:for-index="index">   
+      <image src="{{item.imgsrc}}"></image>
+      <view class="itemtext">
+        <view>{{item.type}}</view>
+        <view>{{item.color}}</view>
+        <view>{{item.losttime}}</view>
+
+      </view>
+      <view class="btn" bindtap="closeHandel" id="{{index}}">
+        <van-icon name="close" color="red"   size="25px"  />
+        
+      </view>
+  </view>
+</view>

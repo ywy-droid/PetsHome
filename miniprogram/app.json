@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/adopterInfo/adopterInfo",
+    "pages/index/index",
+    "pages/release/release",
+    "pages/mine/mine",
+    "pages/adoptDetail/adoptDetail",
+    "pages/adoptpublish/adoptpublish",
+    "pages/seekpublish/seekpublish",
+    "pages/dailypublish/dailypublish",
+    
+    "pages/mineAttention/mineAttention",
+    "pages/mineAdopt/mineAdopt",
+    "pages/seekInfo/seekInfo",
+    "pages/mineDonate/mineDonate",
+    "pages/mineSeek/mineSeek"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FA5D19",
+    "navigationBarTitleText": "Pet's Home",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 15
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#FA5D19",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "动态",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/indexSelected.png"
+      },
+      {
+        "pagePath": "pages/release/release",
+        "text": "发布",
+        "iconPath": "images/release.png",
+        "selectedIconPath": "images/releaseSelected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mineSelected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "iconfont": "./iconfont/iconfont"
+  }
+}

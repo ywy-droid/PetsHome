@@ -1,0 +1,31 @@
+<view class="adopterContainer">
+  <view class="Infocontent">
+    <view class="infoItem" bindtap="getIndexHandel" wx:for="{{adopterInfo}}" wx:for-item="item" wx:for-index="index" id="{{index}}">
+      <view class="title">
+        {{item.title}}
+      </view>
+
+      <radio-group class="radioGruop" data-index="{{index}}" bindchange="radioChange">
+        <view class="groupItem" wx:for="{{item.radios}}" wx:for-item="item" wx:for-index="index">
+          <view>
+            <radio value="{{item.value}}" checked="{{index==0}}">{{item.name}}</radio>
+          </view>
+
+        </view>
+
+      </radio-group>
+
+    </view>
+
+    <view>
+      <view>我在哪里</view>
+      <van-area class="area" area-list="{{areaList}}" columns-placeholder="{{ ['请选择', '请选择', '请选择'] }}" bind:confirm="confirmHandel" bind:cancel="cancelHandel" title="标题" />
+
+      <view class="compelete"  bindtap="compeleteHandel">
+        完成
+      </view>
+    </view>
+
+
+  </view>
+</view>

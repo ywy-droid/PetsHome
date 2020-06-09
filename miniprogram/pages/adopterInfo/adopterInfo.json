@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-area": "@vant/weapp/area/index"
+  },
+  "navigationBarTitleText": "领养人信息采集",
+  "navigationBarTextStyle":"white"
+
+}

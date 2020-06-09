@@ -1,0 +1,13 @@
+<view>
+  <image class="mineAdoptbg" src="../../images/cat2.png"></image>
+  <view class="mineItem" wx:for="{{attentionlist}}" wx:for-item="item" wx:for-index="index">   
+      <image src="{{item.imgsrc}}"></image>
+      <view class="itemtext">
+        <view>{{item.name}}</view>
+        <!-- <view>{{item.age}}</view> -->
+        <view>{{item.type}}</view>
+
+      </view>
+    
+  </view>
+</view>

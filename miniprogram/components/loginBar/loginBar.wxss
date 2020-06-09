@@ -1,0 +1,25 @@
+.barContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  color: #5fa503;
+  font-size: 24px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.batrcontent {
+  background-color: #fff;
+  padding: 40px 0px;
+}
+
+.batrcontent view {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 3px;
+}
+

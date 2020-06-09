@@ -1,0 +1,7 @@
+<view class="barContainer" catchtouchmove="preventTouchMove">
+  <view class="batrcontent">
+    <view>请先授权再看小宝贝哦</view>
+
+    <slot name="loginSlot"></slot>
+  </view>
+</view>

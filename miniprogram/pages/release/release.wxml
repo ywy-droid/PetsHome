@@ -1,0 +1,17 @@
+<loginBottom flag="{{flag}}" class="loginBtm" bind:loginSuccess="onLoginSuccess" bind:loginFail="onLoginFail"></loginBottom>
+<image src="../../images/cat1.png" ></image>
+<view class="publishContainer">
+
+  <view class="pbcontent">
+    <!-- <image class="img" src="../../images/logo.png" mode="aspectFill"></image> -->
+    <view class="square" bindtap="adoptPublish">发布送养</view>
+  </view>
+  <view class="pbcontent">
+    <!-- <image class="img" src="../../images/logo.png" mode="aspectFill"></image> -->
+    <view class="square" bindtap="seekPublish">发布寻宠</view>
+  </view>
+  <view class="pbcontent">
+    <!-- <image class="img" src="../../images/logo.png" mode="aspectFill"></image> -->
+    <view class="square" bindtap="dailyPublish">记录点滴</view>
+  </view>
+</view>

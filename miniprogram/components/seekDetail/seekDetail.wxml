@@ -1,0 +1,37 @@
+
+
+<!-- 展示页面 -->
+<view class="pageDetail">
+
+	<view  class="detail" wx:for="{{seekpets}}" wx:for-index="index" wx:for-item="item">
+		<image src="{{item.imgsrc}}" class="images" mode="aspectFill"></image>
+		<view class="detailBottom">
+			<text class="name">
+			{{item.type}}
+			</text>
+			<text class="type">
+			{{item.address}}
+			</text>
+			<!-- </view> -->
+			<view class="detailhealth">
+				<text class="immunity">
+				{{item.losttime}}
+				</text>
+				<!-- <text  class="deworming">
+				{{item.deworming}}
+				</text>
+				<text  class="feel">
+				{{item.feel}}
+				</text> -->
+			</view>
+			<view class="applycontainer">
+				<view class="apply" id='{{item._id}}' bindtap="morehandel">
+					More Info
+				</view>
+			</view>
+
+		</view>
+	</view>
+
+
+</view>

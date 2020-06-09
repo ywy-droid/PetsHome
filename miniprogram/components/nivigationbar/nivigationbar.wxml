@@ -1,0 +1,47 @@
+ <loginBottom flag="{{flag}}" class="loginBtm" bind:loginSuccess="onLoginSuccess" bind:loginFail="onLoginFail"></loginBottom>
+<!-- 展示页面 -->
+<view class="pageDetail">
+ 
+	<view  class="detail" wx:for="{{adoptList}}" wx:for-index="index" wx:for-item="item" catchtap="morehandel" id="{{index}}" data-petid="{{item._id}}">
+		<image src="{{item.imgsrc}}" class="images" mode="aspectFill">
+    <view  class="iconSl">
+    <iconfont catchtap="cherishHandel" id="{{index}}" name="{{item.flag ? 'tubiao-':'tubiao--copy-copy'}}" size="35">
+
+    </iconfont>
+    </view>
+    
+    <view>{{cherishInx}}</view>
+
+    </image>
+		<view class="detailBottom">
+			<text class="name">
+			{{item.name}}
+			</text>
+			<text class="type">
+			{{item.type}}
+			</text>
+			<!-- </view> -->
+			<view class="detailhealth">
+				<text class="immunity">
+				{{item.immunity}}
+				</text>
+				<text  class="deworming">
+				{{item.deworming}}
+				</text>
+				<text  class="feel">
+				{{item.feel}}
+				</text>
+			</view>
+
+
+			<view class="applycontainer">
+				<view class="apply"  id="{{index}}" data-userid="{{item.openid}}">
+					More Info
+				</view>
+			</view>
+
+		</view>
+	</view>
+
+
+</view>

@@ -1,0 +1,20 @@
+<view>
+<scroll-view class="scrollContainer" enable-flex="true" scroll-x="true">
+<view class="naviitem {{index==naviIndex? 'itemshover':''}}" wx:for="{{naviList}}" wx:for-index="index" wx:for-item="item" id="{{item.id}}" bindtap="Itemhandel" data-index="{{index}}">
+		{{item.name}}
+	</view>
+</scroll-view>
+	<navigationBar class="{{naviIndex==1?'':'active'}}"  adoptlist="{{adoptlist}}"></navigationBar>
+  <seekDetail class="{{naviIndex==2?'':'active'}}"  seekpets="{{seekpets}}"></seekDetail>
+
+
+<view class="backtop" bindtap="backHandel">
+Back
+</view>
+
+<!-- <view class="iconSl">
+  <iconfont name="tubiao--copy-copy"  size="99">
+</iconfont>
+</view> -->
+
+</view>

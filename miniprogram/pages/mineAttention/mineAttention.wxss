@@ -1,0 +1,30 @@
+.mineAdoptbg{
+  width: 151%;
+transform: rotate(-30deg);
+position: absolute;
+top: 100px;
+
+}
+.mineItem{
+position: relative;
+display: flex;
+justify-content: start;
+padding: 10px 5px;
+box-shadow: 0 0 4px 4px #efefef;
+
+}
+.mineItem image{
+width: 100px;
+height: 100px;
+}
+.itemtext{
+ margin-left: 20px;
+font-size: 14px;
+letter-spacing: 2px;
+color: #333;
+
+}
+.itemtext view{
+  line-height: 34px;
+}
+

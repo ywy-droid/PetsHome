@@ -1,0 +1,21 @@
+.view{
+  width: 100%;
+  height: 100%;
+}
+.loginbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+ .btn {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #5fa503;
+  border-radius: 50px;
+  line-height: 50px;
+  margin-top: 15px;
+}

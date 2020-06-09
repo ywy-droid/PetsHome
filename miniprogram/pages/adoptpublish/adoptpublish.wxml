@@ -1,0 +1,65 @@
+<view class="adoptpublish">
+  <view class="adoptTop">
+
+    <view bindtap="addImg" bindtap="addImg">
+      <iconfont name="tupian-copy" size="99" />
+    </view>
+    <text>添加图片</text>
+  </view>
+
+  <view class="adoptCenter">
+    <view class="centerItem">
+      <view>昵称</view>
+      <view>
+        <input bindblur="getInfo" id="name"  placeholder="宠物昵称（限五个字内）" placeholder-class="placeh"></input>
+      </view>
+    </view>
+
+    <view class="centerItem">
+      <view>年龄</view>
+      <view>
+        <input bindblur="getInfo" id="age"  placeholder="请选择宠物年龄" placeholder-class="placeh"></input>
+      </view>
+    </view>
+
+    <view class="centerItem" wx:for="{{donateList}}" wx:for-item="item" wx:for-index="index" wx:for-key="item.name" bindtap="getIndexHandel" id="{{index}}">
+
+      <view>{{item.name}}</view>
+      <view>
+        <radio-group bindchange="getRadio">
+
+          <radio wx:for="{{item.radios}}" wx:for-item="item" wx:for-index="index" wx:for-key="item.name" value="{{item.value}}" checked="{{item.checked}}">{{item.value}}</radio>
+
+        </radio-group>
+      </view>
+    </view>
+
+    <view class="ask">
+      <checkbox-group bindchange="checkboxChange">
+        <checkbox wx:for="{{ask}}" wx:for-item="item" wx:for-index="index" wx:for-key="item.name" value="{{item.value}}" checked="{{item.checked}}">{{item.value}}</checkbox>
+      </checkbox-group>
+    </view>
+
+    <view class="story">
+      <view>TA的故事</view>
+      <textarea bindblur="getStory" placeholder="请输入宠物描述/送养原因" placeholder-style="color:#707070;fontSize:12px">
+      </textarea>
+    </view>
+
+    <view class="address">
+      <van-cell title="请选择地址" is-link bind:click="showPopup" />
+      <van-popup show="{{ show }}" round position="bottom" custom-style="height: 40%" >
+        <van-area class="area" area-list="{{ areaList }}"  bind:confirm="confirmHandel" bind:cancel="cancelHandel"/>
+      </van-popup>
+    </view>
+  </view>
+
+  <view class="centerItem">
+      <view>微信号</view>
+      <view>
+        <input bindblur="getInfo" id="weixin"  placeholder="请输入您的微信" placeholder-class="placeh"></input>
+      </view>
+    </view>
+
+    <view class="publish" bindtap="publishHandel">发布送养</view>
+</view>

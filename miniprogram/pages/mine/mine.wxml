@@ -1,0 +1,50 @@
+<view class="mineContainer">
+
+  <loginBottom flag="{{flag}}" class="loginBtm" bind:loginSuccess="onLoginSuccess" bind:loginFail="onLoginFail">
+  </loginBottom>
+
+  <view class="topInfo">
+    <image class="bg" src="../../images/bluebg.jpg"></image>
+    <!-- <image src="../../images/greenBg.jpg"></image> -->
+    <view class="InfoContainer">
+      <image class="avatar" src="{{avatarUrl}}"></image>
+      <text>{{name}}</text>
+    </view>
+  </view>
+
+  <view class="mineItem">
+    <van-cell-group>
+      <iconfont name="tubiao-" size="28"></iconfont>
+      <view class="cell">
+        <van-cell title="我的关注" is-link link-type="navigateTo" url="/pages/mineAttention/mineAttention" />
+      </view>
+      <iconfont name="maogouchongwuzhaoyinxianxing" size="28"></iconfont>
+      <view class="cell">
+        <van-cell title="我的领养" is-link link-type="navigateTo" url="/pages/mineAdopt/mineAdopt" />
+      </view>
+
+    </van-cell-group>
+
+    
+  </view>
+
+  <view class="mineItem">
+    <van-cell-group>
+       <iconfont name="xin1" size="28"></iconfont>
+      <view class="cell">
+        <van-cell title="我发布的送养" is-link link-type="navigateTo" url="/pages/mineDonate/mineDonate" />
+      </view>
+      
+      <iconfont name="tupian3-copy" size="28"></iconfont>
+      <view class="cell">
+        <van-cell title="我发布的寻宠" is-link link-type="navigateTo" url="/pages/mineSeek/mineSeek" />
+      </view>
+
+      <iconfont name="tubiao_" size="28"></iconfont>
+      <view class="cell">
+        <van-cell title="我发布的点滴" is-link link-type="navigateTo" url="/pages/mineAdopt/mineAdopt" />
+      </view>
+    </van-cell-group>
+  </view>
+
+</view>

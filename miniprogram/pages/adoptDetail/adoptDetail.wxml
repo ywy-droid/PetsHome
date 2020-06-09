@@ -1,0 +1,51 @@
+<view class="ADContainer">
+  <view class="ADcontent">
+    <image class="ADimg" src="{{adoptItem.imgsrc}}" mode="aspectFill"></image>
+    <view class="ADtitle">
+      <text>{{adoptItem.name}}</text>
+      <text>-在</text>
+      <text>{{adoptItem.address}},等你</text>
+    </view>
+    <view class="concat" bindtap="requestAdopt">
+      申请回家
+    </view>
+
+
+
+
+    <view class="ADdetail">
+      <text>位置</text>
+      <text>{{adoptItem.address}}</text>
+      <text>年龄</text>
+      <text>{{adoptItem.age}}</text>
+      <text>种族</text>
+      <text>{{adoptItem.type}}</text>
+      <text>性别</text>
+      <text>{{adoptItem.sex}}</text>
+      <text>接种疫苗</text>
+      <text>{{adoptItem.immunity}}</text>
+      <text>蠕虫</text>
+      <text>{{adoptItem.deworming}}</text>
+      <text>绝育</text>
+      <text>{{adoptItem.feel}}</text>
+      <text>接种疫苗</text>
+      <text>{{adoptItem.immunity}}</text>
+    </view>
+
+    <view class="adStory">
+      <text class="leftcon"></text> {{adoptItem.name}}的故事
+      <text>
+      {{adoptItem.story}}
+      </text>
+    </view>
+
+     <view class="adoptAsk">
+         <text class="leftcon"></text> 领养条件
+         <view class="askDetail">
+          
+            <view wx:for="{{adoptItem.ask}}" wx:for-item="item" wx:for-key="key">{{item}}</view>
+         </view>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view>
+  <image class="mineAdoptbg" src="../../images/cat2.png"></image>
+  <view class="mineItem" wx:for="{{adoptlist}}" wx:for-item="item" wx:for-index="index">   
+      <image src="{{item.petsDetail.imgsrc}}"></image>
+      <view class="itemtext">
+        <view>{{item.petsDetail.name}}</view>
+        <view>{{item.petsDetail.age}}</view>
+        <view>{{item.petsDetail.type}}</view>
+
+      </view>
+    
+  </view>
+</view>

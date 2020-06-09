@@ -1,0 +1,83 @@
+
+
+.pageDetail {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.detail {
+  display: inline-block;
+  width: 49%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-top: 20rpx;
+
+}
+
+.detail image {
+  width: 100%;
+  height: 178px;
+}
+
+.detailBottom {
+  width: 100%;
+  height: 135px;
+  text-align: center;
+  /* background-color: gray; *//* display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-wrap: wrap; */
+}
+
+.detailBottom text {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  display: block;
+  text-align: center;
+  margin-top: 14rpx;
+  font-size: 14px;
+
+}
+
+.name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.type {
+ font-size: 12px !important;
+  font-weight: 500;
+}
+
+.detailhealth {
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.immunity, .deworming, .feel {
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.applycontainer {
+  margin-top: 55rpx;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.apply {
+  width: 300rpx;
+  color: #fff;
+  vertical-align: center;
+  line-height: 35px;
+  border-radius: 10rpx;
+  background-color: #5fa503;
+  display: inline-block;
+  font-weight: 600;
+}

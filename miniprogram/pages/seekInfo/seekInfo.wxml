@@ -1,0 +1,48 @@
+<view class="ADContainer">
+  <view class="ADcontent">
+    <image class="ADimg" src="{{seekItem.imgsrc}}" mode="aspectFill"></image>
+    <view class="ADtitle">
+      <text>微信{{seekItem.openid}}正在等</text>
+      <text>{{seekItem.type}}</text>
+      <text>回家</text>
+    </view>
+
+    <view class="ADdetail">
+      <text>丢失位置</text>
+      <text>{{seekItem.address}}</text>
+      <text>丢失时间</text>
+      <text>{{seekItem.losttime}}</text>
+      <text>种类</text>
+      <text>{{seekItem.type}}</text>
+      <text>颜色</text>
+      <text>{{seekItem.color}}</text>
+
+
+    </view>
+
+    <view class="adStory">
+      <text class="leftcon"></text>联系方式
+      <loginBottom flag="{{flag}}" class="loginBtm" bind:loginSuccess="onLoginSuccess" bind:loginFail="onLoginFail"></loginBottom>
+      <text hidden="{{showFlag}}">
+      {{seekItem.openid}}
+      </text>
+    </view>
+
+
+    <view class="adStory">
+      <text class="leftcon"></text>丢失详情
+      <text>
+      {{seekItem.desc}}
+      </text>
+    </view>
+
+    <!-- <view class="adoptAsk">
+         <text class="leftcon"></text> 领养条件
+         <view class="askDetail">
+          
+            <view wx:for="{{seekItem.ask}}" wx:for-item="item" wx:for-key="key">{{item}}</view>
+         </view>
+    </view> -->
+
+  </view>
+</view>

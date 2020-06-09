@@ -1,0 +1,13 @@
+<view>
+  <!-- <image class="mineAdoptbg" src="../../images/cat2.png"></image> -->
+  <view class="mineItem">   
+      <image src="{{adoptlist.imgsrc}}"></image>
+      <view class="itemtext">
+        <view>{{adoptlist.name}}</view>
+        <view>{{adoptlist.age}}</view>
+        <view>{{adoptlist.type}}</view>
+
+      </view>
+    
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "loginBar": "../loginBar/loginBar"
+  }
+}
